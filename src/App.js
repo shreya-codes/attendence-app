@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 
 export default function App() {
 	const [errorMesssage, setErrorMessage] = useState({});
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [status, setStatus] = useState('');
-	const [info, setInfo] = useState([]);
-	
+	const [info, setInfo] = useState([
+		
+	]);
+
 	const option = [
 		{ label: 'checkin', value: 'checkin' },
 		{ label: 'checkout', value: 'checkout' },
@@ -61,8 +63,10 @@ export default function App() {
 
 				// info.push(userInformation);
 				// setInfo(info);
-        setInfo(userInformation)
-				
+				const updatedInformation = [...info, userInformation];
+        console.log(updatedInformation)
+				setInfo(updatedInformation);
+        store(updatedInformation)
 				console.log(info);
 			}
 		} else {
