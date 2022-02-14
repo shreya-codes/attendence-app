@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--color-light-violet2: #47516b;
+	--color-light-gray: #edf1f7;
+	--color-light-gray2: #c5cbd5;
+	--color-white: #fff;
+	--color-gray2: #8492b1;
+	--color-mercury: #fefeff;
+	--color-black-light: #29193e;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--color-light-gray);
+	width: 100vw;
+	height: 100vh;
+}
+.container {
+	background: linear-gradient(1turn, #f1f6fd 25.92%, #edf1f7);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 0.2rem solid var(--color-white);
+	border-radius: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80vw;
+	height: 80vh;
+}
+
+.check {
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid var(--color-gray2);
+	border-radius: 5px;
+	background-color: var(--color-white);
+	margin: 10px;
+}
+input {
+	background: var(--color-white);
+	border: 1px solid var(--color-light-gray2);
+	border-radius: 0.5rem;
+	color: var(--color-gray2);
+	display: block;
+	height: 2 rem;
+	padding: 0.5rem;
+	transition: all 375ms ease;
+	width: 60%;
+	margin: auto;
+}
+input:focus-visible {
+	outline: none;
+}
+.input-wrapper {
+	margin: 0.5rem;
+}
+.btn,
+.description-btn {
+	border-radius: 0.5rem;
+	margin: 1rem;
+	padding: 1rem;
+	height: 100%;
+	font-size: 100%;
+	font-weight: bolder;
+}
+
+.btn {
+	background: linear-gradient(92.59deg, #6cc4ff 6.2%, #189cf4 92.72%),
+		linear-gradient(92.59deg, #6cc4ff 6.2%, #189cf4 92.72%);
+	color: var(--color-mercury);
+	border: 1px solid;
+}
+.description-btn {
+	border: 1px solid var(--color-white);
+	color: var(--color-black-light);
+}
+label {
+	font-weight: bold;
+	padding: 2 rem;
+}
+.description {
+	background-image: linear-gradient(224.19deg, #179bf3 24.65%, #89d0ff 100.29%);
+	color: var(--color-mercury);
+	height: 100%;
+	border-radius: 1rem;
+	padding: 30% 0;
+}
+.login-form {
+	margin: auto 0;
+}
+.description h1 {
+	font-size: 2.3rem;
+	font-weight: 1000;
+}
+.Dashboard {
+	width: 100vw;
+	margin: auto;
+}
+th {
+	padding: 1rem;
+	color: white;
+	font-size: large;
+	background-color: #179bf3;
+}
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(1turn, #f1f6fd 25.92%, #edf1f7);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+th,
+td {
+	border: 1px solid white;
+	border-radius: 0.3rem;
+
+	padding: 1rem;
+}
+thead th {
+	width: 25%;
+}
